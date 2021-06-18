@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
 html, body {
     height: 100%;
     font-size: x-large;
+
 }
 
 body {
@@ -21,7 +24,7 @@ body {
 }
 
 .bgd {
-    background-color: rgb(70, 70, 83);
+    background-image: linear-gradient(to right, white, grey);
 }
 
 .row {
@@ -159,3 +162,31 @@ footer {
 .ftrRow {
     margin: 0;
 }
+
+.navbar {
+    background-image: linear-gradient(to bottom, grey, red) !important;
+}
+
+li > a {
+    color: black !important;
+}
+
+.typewriter h1 {
+ font-family: 'Gochi Hand', cursive;
+font-size: 6em;
+    text-align: center;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 1.5s steps(10, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  

@@ -1,6 +1,7 @@
 // import the Sequelize constructor from the library
 const Sequelize = require('sequelize');
 require('dotenv').config();
+var mysql = require("mysql");
 
 let sequelize;
 
@@ -14,6 +15,7 @@ if (process.env.JAWSDB_URL) {
     port: 3306
   });
 }
+
 
 
 module.exports = sequelize;
